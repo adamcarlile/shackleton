@@ -1,4 +1,3 @@
-require 'pry'
 require 'mustermann'
 require 'shackleton/extensions/hash_slice'
 require "shackleton/version"

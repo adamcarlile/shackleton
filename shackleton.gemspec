@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["github@adamcarlile.com"]
 
   spec.summary       = %q{Map your way across that cold tudra of API consuming}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/adamcarlile/shackelton"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
