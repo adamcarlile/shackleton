@@ -6,11 +6,8 @@ module Shackleton
     end
 
     def method_missing(method, *args, **kwargs, &block)
-      if @root[method.to_sym]
-        @root.send(method)
-      else
-        super
-      end
+      return Shackleton::Builder.new.add_route(@root[method.to_sym], kwargs) if @root[method.to_sym]
+      super
     end
 
   end
