@@ -36,7 +36,7 @@ map = Shackleton.mapper do
 end
 
 map.line(id: 'northern').meta.modes.to_s #=> 'line/10/meta/modes'
-map.line(id: 'northern').mode(mode: 'tube', detail: true).to_s #=> 'line/10/meta/modes?detail=true'
+map.line(id: 'northern').mode(mode: 'tube', detail: true).to_s #=> 'line/10/meta/modes/tube?detail=true'
 map.line.meta.modes.to_s #=> 'line/meta/modes'
 ```
 
