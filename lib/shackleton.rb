@@ -16,26 +16,3 @@ module Shackleton
   end
   
 end
-
-__END__
-
-
-Shackleton.mapper do
-  route :line, 'line(/:id)' do
-    route :meta do
-      route :modes
-      route :severity
-      route :disruption_categories, 'disruptioncategories'
-      route :service_types, 'servicetypes'
-    end
-    route :mode, 'mode/:modes' do
-      route :route
-    end
-    route :route do
-      route :sequence, 'sequence/:direction' do
-      end
-    end
-    route :status, 'status(/:start_date(/to/:end_date))'
-    route :arrivals, 'arrivals/:stop_point'
-  end
-end
